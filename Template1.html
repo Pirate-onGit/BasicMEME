@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$KELAH - My First Template</title>
+  <meta name="description" content="$KELAH - Community driven Solana meme coin">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loader-wrapper" id="loader">
+    <div class="loader-glow"></div>
+    <div class="loader-content">
+      <div class="loader-logo">$KELAH</div>
+      <div class="loader-spinner"></div>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <div class="nav-brand">
+      <img src="/images/logo.png.JPG" alt="Logo" class="nav-logo">
+      <span>$KELAH</span>
+    </div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#how-to-buy">How to Buy</a>
+      <a href="#chart">Chart</a>
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+  </nav>
+
+  <nav class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#how-to-buy">How to Buy</a>
+    <a href="#chart">Chart</a>
+    <a href="#tokenomics">Tokenomics</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+
+  <section id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>$KELAH</h1>
+        <p>The next Solana meme taking over.</p>
+        <div class="hero-buttons">
+          <a href="#" class="btn primary">Buy on Raydium</a>
+          <button class="btn secondary" id="copy-ca">Copy Contract</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number" id="holders">0</div>
+          <div class="stat-label">Holders</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" id="marketcap">$0</div>
+          <div class="stat-label">Market Cap</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" id="liquidity">$0</div>
+          <div class="stat-label">Liquidity</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">0%</div>
+          <div class="stat-label">Tax</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About $KELAH</h2>
+      <div class="about-cards">
+        <div class="card">🚀 Fair Launch</div>
+        <div class="card">🔒 Liquidity Burned</div>
+        <div class="card">🐸 Community Driven</div>
+        <div class="card">✅ Contract Verified</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-to-buy">
+    <div class="container">
+      <h2>How to Buy</h2>
+      <div class="steps-container">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Download Phantom Wallet</h3>
+            <p>Get Phantom wallet from App Store, Google Play, or phantom.app</p>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Get Some SOL</h3>
+            <p>Buy Solana on Coinbase or Binance and send to your Phantom wallet</p>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Go to Raydium</h3>
+            <p>Visit raydium.io and connect your Phantom wallet</p>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>Swap SOL for $KELAH</h3>
+            <p>Paste contract address, enter SOL amount, and confirm swap</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="chart">
+    <div class="container">
+      <h2>Live Price Chart</h2>
+      <div class="chart-toggle">
+        <button class="chart-btn active" data-chart="dexscreener">DEXScreener</button>
+        <button class="chart-btn" data-chart="dextools">DEXTools</button>
+      </div>
+      <div class="chart-container">
+        <iframe id="chartFrame" class="chart-iframe" src="https://dexscreener.com/solana/YOUR_TOKEN_ADDRESS?embed=1&theme=dark&trades=0&info=0"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="tokenomics">
+    <div class="container">
+      <h2>Tokenomics</h2>
+      <div class="token-grid">
+        <div class="token-card">
+          <h3>Total Supply</h3>
+          <p>1,000,000,000</p>
+        </div>
+        <div class="token-card">
+          <h3>Liquidity Pool</h3>
+          <p>90%</p>
+        </div>
+        <div class="token-card">
+          <h3>Buy/Sell Tax</h3>
+          <p>0%</p>
+        </div>
+        <div class="token-card">
+          <h3>Marketing</h3>
+          <p>5%</p>
+        </div>
+        <div class="token-card">
+          <h3>Team</h3>
+          <p>5%</p>
+        </div>
+        <div class="token-card">
+          <h3>Burned</h3>
+          <p>LP Tokens</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="roadmap">
+    <div class="container">
+      <h2>Roadmap</h2>
+      <div class="roadmap">
+        <div class="step">✅ Phase 1 — Launch on Raydium</div>
+        <div class="step">🔥 Phase 2 — 1000+ Holders</div>
+        <div class="step">📈 Phase 3 — CoinGecko & CMC</div>
+        <div class="step">🚀 Phase 4 — CEX Listings</div>
+        <div class="step">🌙 Phase 5 — To The Moon</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="container">
+      <h2>FAQ</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question"><span>What is $KELAH?</span><span class="faq-icon">▼</span></div>
+          <div class="faq-answer">$KELAH is a community-driven meme coin on Solana with no taxes, burned liquidity, and a fair launch.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question"><span>How do I buy $KELAH?</span><span class="faq-icon">▼</span></div>
+          <div class="faq-answer">Follow the "How to Buy" section. You'll need Phantom wallet and SOL to swap on Raydium.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question"><span>Is liquidity locked?</span><span class="faq-icon">▼</span></div>
+          <div class="faq-answer">Yes! Liquidity is permanently burned and cannot be removed.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question"><span>What are the tokenomics?</span><span class="faq-icon">▼</span></div>
+          <div class="faq-answer">1 billion supply, 0% tax, 90% liquidity, 5% marketing, 5% team.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question"><span>When exchange listings?</span><span class="faq-icon">▼</span></div>
+          <div class="faq-answer">Working on CoinGecko and CMC. CEX listings follow as community grows!</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="buy" style="text-align: center; min-height: 300px; display: flex; align-items: center; justify-content: center;">
+    <div class="container">
+      <a href="#" class="btn primary">Buy Now on Raydium</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Built on Solana</p>
+    <div class="socials">
+      <a href="#"><i class="fa-brands fa-telegram"></i></a>
+      <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-discord"></i></a>
+    </div>
+    <p class="contract" id="contract-address">CA: 0x000...000</p>
+    <p style="font-size: 12px; margin-top: 20px; color: rgba(234, 212, 235, 0.4);">©PirateX</p>
+  </footer>
+
+  <script>
+    // FAQ
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => q.parentElement.classList.toggle('active'));
+    });
+
+    // Stats animation
+    function animateCounter(el, target, duration = 2000) {
+      let current = 0;
+      const increment = target / (duration / 16);
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          el.textContent = target.toLocaleString();
+          clearInterval(timer);
+        } else {
+          el.textContent = Math.floor(current).toLocaleString();
+        }
+      }, 16);
+    }
+
+    const statsObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounter(document.getElementById('holders'), 1247);
+          animateCounter(document.getElementById('marketcap'), 850000);
+          animateCounter(document.getElementById('liquidity'), 425000);
+          statsObserver.unobserve(entry.target);
+        }
+      });
+    });
+    statsObserver.observe(document.getElementById('stats'));
+
+    // Chart toggle
+    const TOKEN_ADDRESS = 'YOUR_TOKEN_ADDRESS';
+    const chartUrls = {
+      dexscreener: `https://dexscreener.com/solana/${TOKEN_ADDRESS}?embed=1&theme=dark&trades=0&info=0`,
+      dextools: `https://www.dextools.io/widget-chart/en/solana/pe-light/${TOKEN_ADDRESS}?theme=dark&chartType=2&chartResolution=30&drawingToolbars=false`
+    };
+
+    document.querySelectorAll('.chart-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.chart-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('chartFrame').src = chartUrls[btn.dataset.chart];
+      });
+    });
+
+    // Loading
+    window.addEventListener('load', () => {
+      setTimeout(() => document.getElementById('loader').classList.add('hidden'), 2000);
+    });
+
+    // Copy contract
+    document.getElementById('copy-ca').addEventListener('click', function() {
+      navigator.clipboard.writeText('0x000...000');
+      this.textContent = 'Copied!';
+      setTimeout(() => this.textContent = 'Copy Contract', 2000);
+    });
+
+    document.getElementById('contract-address').addEventListener('click', function() {
+      navigator.clipboard.writeText('0x000...000');
+      const original = this.textContent;
+      this.textContent = 'Copied!';
+      setTimeout(() => this.textContent = original, 2000);
+    });
+
+    // Mobile menu
+    document.getElementById('menuToggle').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('active');
+    });
+
+    document.querySelectorAll('.mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('mobileMenu').classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
